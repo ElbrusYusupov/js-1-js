@@ -22,6 +22,9 @@ const fullName = firstName + ' ' + lastName;
 const room = 716;
 const type = 'VIP';
 
+// const welcomeMsg = 'Гость ' + firstName + ' ' + lastName + ' поселяется в ' + type + ' номер ' + room
+
+// console.log(welcomeMsg);
 // const welcomeMsg =
 //   'Гость ' +
 //   firstName +
@@ -76,9 +79,14 @@ console.log(string1.includes(blacklistedWord1));
 console.log(string1.includes(blacklistedWord2));
 
 console.log(string2.includes(blacklistedWord1));
-
-const normalizedString2 = string2.toLowerCase();
-console.log(normalizedString2.includes(blacklistedWord2));
+const normalizedString2 = string2.toLowerCase()
+console.log(normalizedString2.toLowerCase().includes(blacklistedWord2));
 
 console.log(string3.includes(blacklistedWord1));
 console.log(string3.includes(blacklistedWord2));
+
+// const normalizedString2 = string2.toLowerCase();
+// console.log(normalizedString2.includes(blacklistedWord2));
+
+// console.log(string3.includes(blacklistedWord1));
+// console.log(string3.includes(blacklistedWord2));

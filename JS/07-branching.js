@@ -3,7 +3,7 @@
  */
 
 // if (5 > 30) {
-//   //  тело
+// //    тело
 //   console.log('qweqwe');
 // }
 
@@ -22,9 +22,9 @@
  * Оператор ветвления else...if
  */
 
-const salary = 5000;
+// const salary = 5000;
 
-// if (salary <= 500) {
+// if (salary < 500) {
 //   console.log('Уровень 1');
 // } else if (salary > 500 && salary <= 1500) {
 //   console.log('Уровень 2');
@@ -39,7 +39,7 @@ const salary = 5000;
 /*
  * Тернарный оператор
  */
-// const balance = 1000;
+const balance = 1000;
 // let message;
 
 // if (balance >= 0) {
@@ -48,9 +48,9 @@ const salary = 5000;
 //   message = 'Негативный баланс';
 // }
 
-// const message = balance >= 0 ? 'Позитивный баланс' : 'Негативный баланс';
+const message = balance >= 0 ? 'Позитивный баланс' : 'Негативный баланс';
 
-// console.log(message);
+console.log(message);
 
 /*
  * Блочная область видимости переменных
@@ -61,8 +61,8 @@ const salary = 5000;
 //   console.log(b);
 // }
 
-// if (true) {
-//   const b = 10;
+if (true) {
+  const a = 10;
 
-//   console.log(a);
-// }
+  console.log(a);
+}

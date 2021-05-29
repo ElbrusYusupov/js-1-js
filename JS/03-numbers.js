@@ -3,6 +3,9 @@
  */
 
 let elementWidth = '50px';
+// const result = Number.parseInt(elementWidth);
+// console.log(typeof result);
+
 // elementWidth = Number.parseInt(elementWidth);
 // console.log('elementWidth: ', elementWidth);
 
@@ -17,26 +20,38 @@ let elementHeight = '200.74px';
 let salary = 1300.16472;
 // salary = Number(salary.toFixed(2));
 
+
+// console.log(salary.toFixed());
+
 // console.log(salary);
 
+// console.log(Number(salary.toFixed(2)));
 /*
  * - Приведение (преобразование) к числу с Number(value)
  * - Значение NaN (Not a Number) и метод Number.isNaN(value)
  */
 let quantity = '30';
-let value = 'Эту строку невозможно привести к числу';
+let value = '12 Эту строку невозможно привести к числу';
 
 // console.log(Number(quantity));
-// console.log(Number(value));
+
+// console.log(Number('value'));
+
+// console.log(5 / 0);
+
+
 
 /*
  * Обьект Math
  * - Возведение в степень
  * - Exponent operator
  */
+// console.log(Math.PI)
 
 // const base = 2;
 // const power = 5;
+// const result = Math.pow(base, power)
+// console.log(base ** power)
 
 // const result = Math.pow(base, power);
 // console.log(base ** power);
@@ -67,6 +82,14 @@ let value = 'Эту строку невозможно привести к чис
  * - Math.random()
  * - Math.round()
  */
+// const max = 80;
+// const min = 10;
+
+// const result = Math.round(Math.random() * (max - min) + min);
+// console.log(result);
+
+// console.log(Math.round(2.7))
+// console.log(Math.random() * (max - min) + min);
 // Math.random() * (max - min) + min
 // const max = 80;
 // const min = 10;
@@ -75,14 +98,14 @@ let value = 'Эту строку невозможно привести к чис
 
 // console.log(result);
 
-// const colors = ['tomato', 'teal', 'orange', 'deeppink', 'skyblue'];
-// const max = colors.length - 1;
-// const min = 0;
+const colors = ['tomato', 'teal', 'orange', 'deeppink', 'skyblue'];
+const max = colors.length - 1;
+const min = 0;
 
-// const index = Math.round(Math.random() * (max - min) + min);
+const index = Math.round(Math.random() * (max - min) + min);
 
-// const color = colors[index];
+const color = colors[index];
 
-// console.log(color);
+console.log(color);
 
-// document.body.style.backgroundColor = color;
+document.body.style.backgroundColor = color;

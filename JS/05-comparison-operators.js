@@ -15,6 +15,6 @@
  * ✅ «ВСЕГДА ИСПОЛЬЗУЕМ СТРОГОЕ РАВЕНСТВО (===) и НЕРАВЕНСТВО (!==)»
  */
 
-const isEqual = 1 === true;
+const isEqual = 1 !== true;
 
 console.log(isEqual);
