@@ -153,5 +153,81 @@ console.log(message); // My name is Mango, I'm 2 years old and happy.
 // $ IF...else statement
 
 
+// let cost = 0;
+// const subscription = 'free';
+
+// if (subscription === 'pro') {
+//     cost = 100;
+// }
+// console.log(cost);
+
+
+// let cost = 0;
+// const subscription = 'free';
+
+// if (subscription === 'pro') {
+//     cost = 100;
+// }
+// console.log(cost);
+
+// let cost;
+// const subscription = 'premium';
+
+
+// if (subscription === 'free') {
+//     cost = 0;
+// } else if (subscription === 'pro') {
+//     cost = 100;
+// } else if (subscription === 'premium') {
+//     cost = 500;
+// } else {
+//     console.log('Invalid subscription type');
+// }
+
+// console.log(cost);
+
+// const age = 20;
+// const type = age <= 18 ? 'adult' : 'child';
+
+// console.log(type)
+
+// const num1 = 5;
+// const num2 = 10;
+// let biggerNumber;
+
+// if (num1 > num2) {
+//     biggerNumber = num1;
+// } else {
+//     biggerNumber = num2;
+// }
+// console.log(biggerNumber);
+
+// const num1 = 5;
+// const num2 = 10;
+
+// const biggerNumber = num1 < num2 ? num2  : num1;
+
+// console.log(biggerNumber);
+
+
 let cost;
-const subscription
+const subscription = 'frgee';
+
+switch (subscription) {
+    case 'free':
+        cost = 0;
+        break;
+
+    case 'pro':
+        cost = 100;
+        break;
+
+    case 'premium':
+        cost = 500;
+        break;
+    
+    default:
+        console.log('Invalid subscription type')
+}
+
+console.log(cost);
