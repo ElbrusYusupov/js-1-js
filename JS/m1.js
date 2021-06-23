@@ -211,7 +211,7 @@ console.log(message); // My name is Mango, I'm 2 years old and happy.
 
 
 // let cost;
-// const subscription = 'frgee';
+// const subscription = 'free';
 
 // switch (subscription) {
 //     case 'free':
@@ -232,3 +232,117 @@ console.log(message); // My name is Mango, I'm 2 years old and happy.
 
 // console.log(cost);
 
+// const value = 5;
+
+// if (true) {
+//     console.log('Block scope: ', value);
+// }
+// console.log('Global scope: ', value);
+
+// if (true) {
+//     const value = 5;
+//     console.log('Block scope: ', value);
+// }
+// console.log('Global scope: ', value);
+
+//  $$ Variable scope
+
+// const global = 'global';
+// if (true) {
+//     const blockA = 'block A';
+
+// We see global + local A
+// console.log(global);
+// console.log(blockA);
+
+//    The variables blockB and blockC were not found in the available scopes.
+//    There will be an error referring to the variable.
+
+// console.log(blockB);
+// console.log(blockC);
+
+// if (true) {
+//     const blockB = 'block B';
+// We see global + external A = local B 
+
+// console.log(global);
+// console.log(blockA);
+// console.log(blockB);
+
+//     Variable blockC was not found in the available scopes.
+//     There will be an error referring to the variable.
+
+
+// console.log(blockC);
+//     }
+// }
+// if (true) {
+//     const blockC = 'block C';
+// We see global + local C 
+
+// console.log(blockC);
+// console.log(global);
+
+// Variables block A and B not found in the available scope
+// There will be an error referring to the variable.
+
+// console.log(blockA);
+// console.log(blockB);
+
+
+// }
+// console.log(global);
+// console.log(blockB);
+// console.log(blockA);
+// console.log(blockC);
+
+//$$ While loop
+
+// let counter = 0;
+
+// while (counter < 10) {
+//     console.log('counter: '), counter;
+//     counter += 1;
+// }
+
+// 
+
+// $$ do...while loop
+
+// 
+
+// &&& loop for
+
+// const max = 10;
+
+// for (let i = 0; i < max; i += 1) {
+//     console.log(i)
+// }
+
+// const max = 10;
+
+// for (let i = 0; i < max; i += 1) {
+//     console.log(`${max} % ${i} = `, max % i);
+// }
+
+// for (let i = 0; i < 10; i += 1) {
+//     if (i === 5) {
+//         console.log('Дошли до 5-й итерации, прерываем цикл!');
+//         break;
+//     }
+// }
+
+/*
+ * Используем цикл для вывода только нечетных чисел.
+ * Для чётных i срабатывает continue, выполнение тела прекращается
+ * и управление передаётся на следующую итерацию.
+ */
+const number = 10;
+
+for (let i = 0; i < number; i += 1) {
+    if (i % 2 === 0) {
+        continue;
+    }
+
+    console.log('Нечетное i: ', i); // 1, 3, 5, 7, 9
+}
