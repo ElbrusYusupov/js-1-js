@@ -210,24 +210,25 @@ console.log(message); // My name is Mango, I'm 2 years old and happy.
 // console.log(biggerNumber);
 
 
-let cost;
-const subscription = 'frgee';
+// let cost;
+// const subscription = 'frgee';
 
-switch (subscription) {
-    case 'free':
-        cost = 0;
-        break;
+// switch (subscription) {
+//     case 'free':
+//         cost = 0;
+//         break;
 
-    case 'pro':
-        cost = 100;
-        break;
+//     case 'pro':
+//         cost = 100;
+//         break;
 
-    case 'premium':
-        cost = 500;
-        break;
-    
-    default:
-        console.log('Invalid subscription type')
-}
+//     case 'premium':
+//         cost = 500;
+//         break;
 
-console.log(cost);
+//     default:
+//         console.log('Invalid subscription type')
+// }
+
+// console.log(cost);
+
