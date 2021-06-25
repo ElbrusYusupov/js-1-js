@@ -114,13 +114,13 @@
 // console.log(message);
 
 
-const clients = ['Mango', 'Poly', 'Ajax'];
-const clientNameToFind = 'Moly';
-let message = 'There is not the client with this name in the database!';
+// const clients = ['Mango', 'Poly', 'Ajax'];
+// const clientNameToFind = 'Moly';
+// let message = 'There is not the client with this name in the database!';
 
-for (const client of clients) {
-    message = 'There is the client with this name in the database!'
-}
+// for (const client of clients) {
+//     message = 'There is the client with this name in the database!'
+// }
 
-console.log(message);
+// console.log(message);
 
