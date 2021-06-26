@@ -124,3 +124,196 @@
 
 // console.log(message);
 
+// const clients = ['Mango', 'Poly', 'Ajax'];
+// const clientNameToFind = 'Poly';
+// let message = 'There is not client with this name in the database';
+
+// for (const client of clients) {
+//     if (client === clientNameToFind) {
+//         message = 'There is the client with this name in the database';
+//         break;
+//     }
+//     // If it doesn't match, than we do nothing at this iteration
+
+// }
+// console.log(message);
+
+//// For numbers less than threshold, continue is triggered, the execution of body is terminated and control passed to the next iteration.
+
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] < threshold) {
+//         continue;
+//     }
+//     console.log(`Number above than ${threshold}: ${numbers[i]}`);
+// }
+
+// const matrix = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9],
+// ];
+// let total = 0;
+
+// for (let i = 0; i < matrix.length; i += 1) {
+//     console.log('Matrix subarray matrix[i]: ', matrix[i]);
+
+//     for (let j = 0; j < matrix[i].length; j += 1) {
+//         console.log('Matrix subarray element matrix[i][j]: ', matrix[i][j]);
+//         total += matrix[i][j];
+//     }
+// }
+
+// console.log(total);
+
+/////////// $$ Assignment by reference and by value
+
+// let a = 5;
+// let b = a;
+
+// console.log(a);
+// console.log(b);
+
+// a = 10;
+// console.log(a);
+// console.log(b);
+
+
+// const a = ['Mango'];
+
+// // Assignment by reference
+
+// const b = a;
+// console.log(a);
+// console.log(b);
+
+// // modify the array by adding one more element using the pointer from "a"
+
+// a.push('Poly');
+// console.log(a);
+
+// // b has changed too, because b, like a, just contains a reference to the same memory location
+// console.log(b);
+
+// // The result is repeated
+
+// b.push('Ajax');
+// console.log(b);
+// console.log(a);
+
+// $$$$$$$$$$$$$$$ The split () and join () methods
+
+// const message = 'Welcome to Bahamas';
+
+// console.log(message.split(' '));
+// console.log(message.split(''));
+
+// const clients = ['Mango', 'Poly', 'Ajax'];
+
+// console.log(clients.join(' '));
+// console.log(clients.join(', '));
+// console.log(clients.join('-'));
+
+/// $$$ indexOf() and includes() methods
+
+// const clients = ['Mango', 'Poly', 'Ajax', 'Kiwi'];
+// console.log(clients.indexOf('Poly'));
+// console.log(clients.indexOf('Monkong'));
+
+// console.log(clients.includes('Mango'));
+// console.log(clients.includes('Ajax'));
+// console.log(clients.includes('Monkong'));
+
+/////////////////// Checking multiple conditions with includes()
+// const fruit = 'apple';
+
+// if (fruit === 'apple' || fruit === 'strawberry') {
+//     console.log('It is a red fruit!')
+// }
+
+// const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+// const fruit = 'cherry';
+
+// if (redFruits.includes(fruit)) {
+//     console.log('It is a red fruit');
+// }
+
+//// $$$$$ push(), pop(), shift(), unshift() methods
+
+
+// Create an empty array
+
+// const stack = [];
+// // Adding elements to the end of the array
+
+// stack.push(1);
+// console.log(stack);
+
+// stack.push(2);
+// console.log(stack);
+
+// stack.push(3);
+// console.log(stack);
+
+// // Removing elements from the end of the array
+
+// stack.pop();
+// console.log(stack);
+
+// stack.pop();
+// console.log(stack);
+
+// stack.pop();
+// console.log(stack);
+
+// console.log(stack.pop());
+
+
+// const clients = ['Mango', 'Poly', 'Ajax']
+
+// console.log(clients.shift());
+// console.log(clients);
+
+// clients.unshift('Kiwi')
+// console.log(clients);
+
+////$$$$$ slice() method
+
+// const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+
+// console.log(clients.slice(1, 3));
+
+// console.log(clients.slice(1));
+// console.log(clients.slice(-2));
+// console.log(clients.slice());
+// console.log(clients.slice(-1));
+
+
+/////// $$$ splice() method
+
+// Suppose we have an array of rating that contains five numbers from 1 to 5
+
+// const scores = [1, 2, 3, 4, 5];
+
+// // The next operation removes three elements starting from the first element (index 0)
+
+// const deletedScores = scores.splice(0, 3);
+
+// // The scores array now contains two elements
+
+
+// console.log(scores);
+
+// console.log(deletedScores);
+
+// Inserting elements into an array
+
+const colors = ['red', 'green', 'blue'];
+
+colors.splice(2, 0, 'purple');
+
+console.log(colors);
+colors.splice(1, 0, 'yellow', 'pink');
+console.log(colors);
