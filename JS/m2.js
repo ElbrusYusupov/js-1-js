@@ -310,10 +310,157 @@
 
 // Inserting elements into an array
 
-const colors = ['red', 'green', 'blue'];
+// const colors = ['red', 'green', 'blue'];
 
-colors.splice(2, 0, 'purple');
+// colors.splice(2, 0, 'purple');
 
-console.log(colors);
-colors.splice(1, 0, 'yellow', 'pink');
-console.log(colors);
+// console.log(colors);
+// colors.splice(1, 0, 'yellow', 'pink');
+// console.log(colors);
+
+//// $$$$ Function expression
+
+
+// // a,b,c are parameters
+// const add = function (a, b, c) {
+//     return a + b + c;
+// }
+
+// // 1,2,3 are arguments
+
+// const result = add(1, 2, 3);
+
+
+// console.log(result);
+// console.log(add(5, 10, 15));
+
+// $$ Order of code execution
+
+// const fnA = function () {
+//     console.log('Started to be executed [fnA]');
+//     fnB();
+//     console.log('[fnA] continued to execute after exiting [fnB]');
+// }
+
+// const fnB = function () {
+//     console.log('Executing [fnB]');
+
+// }
+// console.log('Started executing [main]');
+// fnA();
+// console.log('[main] continued to execute after exiting [fnA]');
+
+//// $$$$ Default parameters
+
+// const count = function (countFrom = 0, countTo = 10, step = 1) {
+//     console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
+
+//     for (let i = countFrom; i <= countTo; i += step) {
+//         console.log(i);
+//     }
+// }
+// count(1, 17);
+// count(2);
+// count(undefined, 5, 2);
+// count();
+
+//// $$ Subarray arguments
+
+// const sum = function () {
+//     let total = 0;
+
+//     for (const argument of arguments) {
+//         total += argument;
+
+//     }
+//     return total;
+// };
+// console.log(sum(1,2,3));
+// console.log(sum(1,2,2,3,3,3,500));
+// console.log(sum(1,2,3,4,8));
+
+// const fn = function () {
+//   // В переменной args будет полноценный массив
+//   const args = Array.from(arguments);
+// };
+
+// ////// $$$$$$$$ Guard Clause pattern
+
+// const withdraw = function (amount, balance) {
+//     if (amount === 0) {
+//         console.log('To carry out the operation, enter an amount greater than zero.');
+//     } else if (amount > balance) {
+//         console.log('Insufficient funds on the account');
+//     } else {
+//         console.log('Withdrawal operation completed.');
+//     }
+// }
+
+// const withdraw = function (amount, balance) {
+  
+//   if (amount === 0) {
+//     console.log('Для проведения операции введите сумму больше нуля.');
+//     return;
+//   }
+
+ 
+//   if (amount > balance) {
+//     console.log('Недостаточно средств на счету.');
+//     return;
+//   }
+
+  
+//   console.log('Операция снятия средств проведена.');
+// };
+
+
+
+// // withdraw(0, 300);
+// // withdraw(500, 300)
+// withdraw(100, 300)
+
+// add(1, 2, 3); // 6
+// print('text'); // text
+
+// function add(a, b, c) {
+//   return a + b + c;
+// }
+
+// function print(str) {
+//   console.log(str);
+// }
+
+
+////// $$$$$$$$ Function scope
+
+// const value = 50;
+
+// const add = function (num) {
+//     const value = 10;
+//     const innerValue = 5;
+
+//     return num + value + innerValue;
+// };
+// console.log(value);
+// console.log(add(20)); // 35
+
+// // Если параметров несколько, то они перечисляются через запятую в круглых скобках.
+// const fn = (a, b, c) => {
+//   return a + b + c;
+// };
+
+// // Если параметр один, то он может быть без круглых скобок.
+// const fn = x => {
+//   return x * 2;
+// };
+
+// Если параметров нет, то обязательно должны быть пустые круглые скобки.
+const fn = () => {
+  console.log('Hello! :]');
+};
+
+const add = (...args) => {
+  console.log(args);
+};
+
+add(1, 2, 3); // [1, 2, 3]
