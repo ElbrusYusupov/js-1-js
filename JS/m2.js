@@ -455,12 +455,69 @@
 // };
 
 // Если параметров нет, то обязательно должны быть пустые круглые скобки.
-const fn = () => {
-  console.log('Hello! :]');
-};
+// const fn = () => {
+//   console.log('Hello! :]');
+// };
 
-const add = (...args) => {
-  console.log(args);
-};
+// const add = (...args) => {
+//   console.log(args);
+// };
 
-add(1, 2, 3); // [1, 2, 3]
+// add(1, 2, 3); // [1, 2, 3]
+
+
+// function isNumberNotInRange(start, end, number) {
+//   const isInRange = number >= start && number <= end;
+//   const isNotInRange = number >= start && number <= end; // Change this line
+  
+//   return !isNotInRange;
+// }
+// isNumberNotInRange(10, 30, 17);
+// isNumberNotInRange(10, 30, 5);
+// isNumberNotInRange(20, 50, 24);
+// isNumberNotInRange(20, 50, 76);
+
+
+// function getSubstring(string, length) {
+//   const substring = string.slice("Hello world", length); // Change this line
+
+//   return substring;
+// }
+
+// console.log(getSubstring("Hello world", 3)); // возвращает "Hel"
+// console.log(getSubstring("Hello world", 6));   // возвращает "Hello"
+// console.log(getSubstring("Hello world", 8));   // возвращает "Hello wo
+// console.log(getSubstring("Hello world", 11));  //  возвращает "Hello world
+// console.log(getSubstring("Hello world", 0));  //  возвращает ""
+
+
+
+// getSubstring("Hello world", 6)  // возвращает "Hello"
+// getSubstring("Hello world", 8)  // возвращает "Hello wo"
+// getSubstring("Hello world", 11) // возвращает "Hello world"
+// getSubstring("Hello world", 0)  // возвращает ""
+
+
+function formatMessage(message, maxLength) {
+  let result;
+  // Change code below this line
+if (message.length <= maxLength) {
+	result = message.slice(message, maxLength)
+  } else {
+  
+  result = message.slice(0, maxLength)
+  result += '...'
+  }
+  
+  /// Change code above this line
+  return result;
+}
+
+
+
+console.log(formatMessage("Curabitur ligula sapien", 16))                      // возвращает "Curabitur ligula..."
+console.log(formatMessage("Curabitur ligula sapien", 23))                      // возвращает "Curabitur ligula sapien"
+console.log(formatMessage("Vestibulum facilisis purus nec", 20))                      // возвращает "Vestibulum facilisis..."
+console.log(formatMessage("Vestibulum facilisis purus nec", 30))                      // возвращает "Vestibulum facilisis purus nec"
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15))                      // возвращает "Nunc sed turpis..."
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41))                      // возвращает "Nunc sed turpis a felis in nunc fringilla"
