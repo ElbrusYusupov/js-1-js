@@ -128,8 +128,68 @@
 
 //// $$$ for...in loop
 
-const hotel = {
-    name: 'Resort Hotel',
-    stars: 5,
-    capacity
+// const hotel = {
+//     name: 'Resort Hotel',
+//     stars: 5,
+//     capacity: 100,
+// };
+
+// for (const key in hotel) {
+//     console.log('Key: ', key);
+// }
+
+// for (const key in hotel) {
+//     console.log('Value: ', hotel[key]);
+// }
+
+// const hotel = {
+//     name: 'Resort Hotel',
+//     stars: 5,
+//     capacity: 100,
+// };
+
+// for (const key in hotel) {
+//     console.log('Value: ', hotel[key]);
+// }
+
+//// $$$$ Object.keys(), Object.values(), Object.entries()
+
+// const hotel = {
+//     name: 'Resort Hotel',
+//     stars: 5,
+//     capacity: 100,
+// };
+
+// const keys = Object.keys(hotel);
+// const values = Object.values(hotel);
+// const entries = Object.entries(hotel);
+
+
+// for (const key of keys) {
+//     console.log('Value: ', hotel[key]);
+// };
+
+
+// for (const entry of entries) {
+//     const key = entry[0]
+//     const value = entry[1]
+
+//     console.log(`${key}: ${value}`);
+// }
+
+const goods = {
+    apples: 6,
+    grapes: 3,
+    bread: 4,
+    cheese: 7,
+};
+
+const values = Object.values(goods);
+
+let total = 0;
+
+for (const value of values) {
+    total += value
 }
+
+console.log(total);
