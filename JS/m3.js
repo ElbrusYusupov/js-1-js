@@ -177,19 +177,23 @@
 //     console.log(`${key}: ${value}`);
 // }
 
-const goods = {
-    apples: 6,
-    grapes: 3,
-    bread: 4,
-    cheese: 7,
-};
+// const goods = {
+//     apples: 6,
+//     grapes: 3,
+//     bread: 4,
+//     cheese: 7,
+// };
 
-const values = Object.values(goods);
+// const values = Object.values(goods);
 
-let total = 0;
+// let total = 0;
 
-for (const value of values) {
-    total += value
-}
+// for (const value of values) {
+//     total += value
+// }
 
-console.log(total);
+// console.log(total);
+const temperatures = [18, 14, 12, 21, 17, 29];
+const min = Math.min(...temperatures)
+
+console.log(min);
