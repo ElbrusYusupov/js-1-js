@@ -193,7 +193,137 @@
 // }
 
 // console.log(total);
-const temperatures = [18, 14, 12, 21, 17, 29];
-const min = Math.min(...temperatures)
+// const temperatures = [18, 14, 12, 21, 17, 29];
+// const min = Math.min(...temperatures)
 
-console.log(min);
+// console.log(min);
+
+//// $$$ Spray arrays 
+
+// const houses = ['Arryn', 'Frey', 'Greyjoy', 'Stark', 'Lannister', 'Tyrell'];
+// const copyOfHouses = [...houses];
+
+// console.log(houses);
+// console.log(copyOfHouses);
+// console.log(houses === copyOfHouses);
+
+// const sliceCopyOfHouses = houses.slice();
+
+// console.log(houses);
+// console.log(sliceCopyOfHouses);
+
+// const completeHouses = [...houses, 'Targaryen'];
+// console.log(houses);
+// console.log(completeHouses);
+
+// const firstBatch = ['Arryn', 'Frey', 'Greyjoy'];
+// const secondBatch = ['Stark', 'Lannister', 'Tyrell'];
+// const houses = [...firstBatch, ...secondBatch];
+// console.log(houses);
+
+// const houses = ['Arryn', 'Frey', 'Greyjoy', 'Stark', 'Lanister', 'Tyrell'];
+// 
+// const housesInDebt = [...houses.slice(0, 4), ...houses.slice(5)];
+// 
+// console.log(housesInDebt);
+
+
+// const houses = ['Arryn', 'Frey', 'Greyjoy', 'Stark', 'Lanister', 'Tyrell'];
+
+// const updatedHouses = [
+//     ...houses.slice(0, 1),
+//     'Frey of the crossing',
+//     ...houses.slice(2),
+// ];
+
+// console.log(updatedHouses);
+
+//// $$$$ Spray objects
+
+// const a = { x: 3, y: 2 };
+// const b = { x: 2, z: 3 };
+
+// const c = Object.assign({}, a, b);
+// console.log(c);
+
+// const d = {  ...b, ...a};
+// console.log(d);
+
+// const a = { x: 1, y: 2 };
+// const b = { x: 0, z: 3 };
+
+// const c = { x: 5, j: 10, ...a, ...b };
+
+// // console.log(c);
+
+// const lion = { hasTail: true, legs: 4 };
+// const eagle = { canFly: true };
+
+// const chimera = { ...lion, ...eagle };
+
+// const add = function (...args) {
+//     console.log(args);
+// };
+
+// add(1, 2, 2);
+// add('llklkj', 'klk', 'l', 'jlkjlk', 'ojlkj')
+
+// const add = function (value, ...args) {
+//     console.log(value);
+//     console.log(args);
+// }
+
+// add(10, 1, 2, 3);
+// add(15, 1, 2, 3, 4, 5);
+
+
+
+//////////////// $$$$$$$$$$$$$$$$$ Destructuring objects
+
+// const hotel = {
+//     name: 'Resort Hotel',
+//     stars: 5,
+//     capacity: 100,
+// };
+// const { name, stars, status } = hotel;
+// console.log(name, stars, status);
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capacity: 100,
+// };
+
+// const { name = 'hotel', stars = 3, status = 'empty' } = hotel;
+
+// console.log(name, stars, status); // "Resort Hotel", 5, "empty"
+
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capacity: 100,
+// };
+
+// const { name, stars, ...rest} = hotel;
+
+// console.log(name); // "Resort Hotel"
+// console.log(rest); // {stars: 5, capacity: 100}
+// console.log(stars);
+
+//////////////// $$$$$$$$$$$$$$$$$ Destructuring arrays
+
+const rgb = [200, 255, 100];
+
+// const [red, green, blue] = rgb;
+// console.log(`Red: ${red}, Green: ${green}, Blue: ${blue}`);
+ 
+// let red, green, blue;
+
+// [red, green, blue] = rgb;
+
+// console.log(`Red: ${red}, Green: ${green}, Blue: ${blue}`);
+// // Red: 200, Green: 255, Blue: 100
+
+const [red, ...colors] = rgb;
+console.log(`Red: ${red}, ${colors}`);
