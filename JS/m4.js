@@ -423,17 +423,44 @@
 // // hotelGreeter(); // "Mango, welcome to Resort Hotel!"
 
 
-const hotel = {
-  name: 'Resort Hotel',
-  showThis() {
-    console.log(this);
+// const hotel = {
+//   name: 'Resort Hotel',
+//   showThis() {
+//     console.log(this);
+//   },
+// };
+
+// const fn = function (callback) {
+//   callback()
+// };
+
+// // Pass the copy of the showThis method with the context bound to the hotel
+
+// fn(hotel.showThis.bind(hotel))
+
+
+//// $$$$ Procedural programming
+
+// const baseSalary = 30000;
+// const overtime = 10;
+// const rate = 20;
+
+// const getWage = (baseSalary, overtime, rate) => {
+//   return baseSalary + overtime * rate;
+// };
+
+// getWage(baseSalary, overtime, rate);
+
+//// $$$$$$ Object Oriented Programming
+
+const employee = {
+  baseSalary: 30000,
+  overtime: 10,
+  rate: 20,
+  getWage() {
+    return this.baseSalary + this.overtime * this.rate;
   },
+  
 };
 
-const fn = function (callback) {
-  callback()
-};
-
-// Pass the copy of the showThis method with the context bound to the hotel
-
-fn(hotel.showThis.bind(hotel))
+employee.getWage()

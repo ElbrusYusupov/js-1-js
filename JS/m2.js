@@ -521,3 +521,27 @@ console.log(formatMessage("Vestibulum facilisis purus nec", 20))                
 console.log(formatMessage("Vestibulum facilisis purus nec", 30))                      // возвращает "Vestibulum facilisis purus nec"
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15))                      // возвращает "Nunc sed turpis..."
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41))                      // возвращает "Nunc sed turpis a felis in nunc fringilla"
+
+
+
+function normalizeInput(input) {
+  const normalizedInput = input.toLowerCase(); // Change this line
+
+  return normalizedInput;
+}
+
+
+
+function checkForName(fullName, name) {
+ const result = fullName.includes(name); // Change this line
+  return result;
+}
+
+
+function checkForSpam(message) {
+  let result;
+  // Change code below this lin
+	result = message.toLowerCase().includes('sale') || message.toLowerCase().includes('spam');
+  // Change code above this line
+  return result;
+}
