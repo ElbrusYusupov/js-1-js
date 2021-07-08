@@ -451,16 +451,24 @@
 
 // getWage(baseSalary, overtime, rate);
 
-//// $$$$$$ Object Oriented Programming
+// //// $$$$$$ Object Oriented Programming
 
-const employee = {
-  baseSalary: 30000,
-  overtime: 10,
-  rate: 20,
-  getWage() {
-    return this.baseSalary + this.overtime * this.rate;
-  },
+// const employee = {
+//   baseSalary: 30000,
+//   overtime: 10,
+//   rate: 20,
+//   getWage() {
+//     return this.baseSalary + this.overtime * this.rate;
+//   },
   
+// };
+
+// employee.getWage()
+
+const add = function (value, ...args) {
+  console.log(value); // первый аргумент
+  console.log(args); // массив всех остальных аргументов
 };
 
-employee.getWage()
+add(10, 1, 2, 3);
+add(15, 1, 2, 3, 4, 5);

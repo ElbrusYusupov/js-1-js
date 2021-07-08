@@ -374,174 +374,175 @@
 
 //     }
 //     return total;
-// };
-// console.log(sum(1,2,3));
-// console.log(sum(1,2,2,3,3,3,500));
-// console.log(sum(1,2,3,4,8));
+// // };
+// // console.log(sum(1,2,3));
+// // console.log(sum(1,2,2,3,3,3,500));
+// // console.log(sum(1,2,3,4,8));
 
-// const fn = function () {
-//   // В переменной args будет полноценный массив
-//   const args = Array.from(arguments);
-// };
+// // const fn = function () {
+// //   // В переменной args будет полноценный массив
+// //   const args = Array.from(arguments);
+// // };
 
-// ////// $$$$$$$$ Guard Clause pattern
+// // ////// $$$$$$$$ Guard Clause pattern
 
-// const withdraw = function (amount, balance) {
-//     if (amount === 0) {
-//         console.log('To carry out the operation, enter an amount greater than zero.');
-//     } else if (amount > balance) {
-//         console.log('Insufficient funds on the account');
-//     } else {
-//         console.log('Withdrawal operation completed.');
-//     }
-// }
+// // const withdraw = function (amount, balance) {
+// //     if (amount === 0) {
+// //         console.log('To carry out the operation, enter an amount greater than zero.');
+// //     } else if (amount > balance) {
+// //         console.log('Insufficient funds on the account');
+// //     } else {
+// //         console.log('Withdrawal operation completed.');
+// //     }
+// // }
 
-// const withdraw = function (amount, balance) {
+// // const withdraw = function (amount, balance) {
   
-//   if (amount === 0) {
-//     console.log('Для проведения операции введите сумму больше нуля.');
-//     return;
-//   }
+// //   if (amount === 0) {
+// //     console.log('Для проведения операции введите сумму больше нуля.');
+// //     return;
+// //   }
 
  
-//   if (amount > balance) {
-//     console.log('Недостаточно средств на счету.');
-//     return;
+// //   if (amount > balance) {
+// //     console.log('Недостаточно средств на счету.');
+// //     return;
+// //   }
+
+  
+// //   console.log('Операция снятия средств проведена.');
+// // };
+
+
+
+// // // withdraw(0, 300);
+// // // withdraw(500, 300)
+// // withdraw(100, 300)
+
+// // add(1, 2, 3); // 6
+// // print('text'); // text
+
+// // function add(a, b, c) {
+// //   return a + b + c;
+// // }
+
+// // function print(str) {
+// //   console.log(str);
+// // }
+
+
+// ////// $$$$$$$$ Function scope
+
+// // const value = 50;
+
+// // const add = function (num) {
+// //     const value = 10;
+// //     const innerValue = 5;
+
+// //     return num + value + innerValue;
+// // };
+// // console.log(value);
+// // console.log(add(20)); // 35
+
+// // // Если параметров несколько, то они перечисляются через запятую в круглых скобках.
+// // const fn = (a, b, c) => {
+// //   return a + b + c;
+// // };
+
+// // // Если параметр один, то он может быть без круглых скобок.
+// // const fn = x => {
+// //   return x * 2;
+// // };
+
+// // Если параметров нет, то обязательно должны быть пустые круглые скобки.
+// // const fn = () => {
+// //   console.log('Hello! :]');
+// // };
+
+// // const add = (...args) => {
+// //   console.log(args);
+// // };
+
+// // add(1, 2, 3); // [1, 2, 3]
+
+
+// // function isNumberNotInRange(start, end, number) {
+// //   const isInRange = number >= start && number <= end;
+// //   const isNotInRange = number >= start && number <= end; // Change this line
+  
+// //   return !isNotInRange;
+// // }
+// // isNumberNotInRange(10, 30, 17);
+// // isNumberNotInRange(10, 30, 5);
+// // isNumberNotInRange(20, 50, 24);
+// // isNumberNotInRange(20, 50, 76);
+
+
+// // function getSubstring(string, length) {
+// //   const substring = string.slice("Hello world", length); // Change this line
+
+// //   return substring;
+// // }
+
+// // console.log(getSubstring("Hello world", 3)); // возвращает "Hel"
+// // console.log(getSubstring("Hello world", 6));   // возвращает "Hello"
+// // console.log(getSubstring("Hello world", 8));   // возвращает "Hello wo
+// // console.log(getSubstring("Hello world", 11));  //  возвращает "Hello world
+// // console.log(getSubstring("Hello world", 0));  //  возвращает ""
+
+
+
+// // getSubstring("Hello world", 6)  // возвращает "Hello"
+// // getSubstring("Hello world", 8)  // возвращает "Hello wo"
+// // getSubstring("Hello world", 11) // возвращает "Hello world"
+// // getSubstring("Hello world", 0)  // возвращает ""
+
+
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+// if (message.length <= maxLength) {
+// 	result = message.slice(message, maxLength)
+//   } else {
+  
+//   result = message.slice(0, maxLength)
+//   result += '...'
 //   }
-
   
-//   console.log('Операция снятия средств проведена.');
-// };
-
-
-
-// // withdraw(0, 300);
-// // withdraw(500, 300)
-// withdraw(100, 300)
-
-// add(1, 2, 3); // 6
-// print('text'); // text
-
-// function add(a, b, c) {
-//   return a + b + c;
-// }
-
-// function print(str) {
-//   console.log(str);
+//   /// Change code above this line
+//   return result;
 // }
 
 
-////// $$$$$$$$ Function scope
 
-// const value = 50;
-
-// const add = function (num) {
-//     const value = 10;
-//     const innerValue = 5;
-
-//     return num + value + innerValue;
-// };
-// console.log(value);
-// console.log(add(20)); // 35
-
-// // Если параметров несколько, то они перечисляются через запятую в круглых скобках.
-// const fn = (a, b, c) => {
-//   return a + b + c;
-// };
-
-// // Если параметр один, то он может быть без круглых скобок.
-// const fn = x => {
-//   return x * 2;
-// };
-
-// Если параметров нет, то обязательно должны быть пустые круглые скобки.
-// const fn = () => {
-//   console.log('Hello! :]');
-// };
-
-// const add = (...args) => {
-//   console.log(args);
-// };
-
-// add(1, 2, 3); // [1, 2, 3]
+// console.log(formatMessage("Curabitur ligula sapien", 16))                      // возвращает "Curabitur ligula..."
+// console.log(formatMessage("Curabitur ligula sapien", 23))                      // возвращает "Curabitur ligula sapien"
+// console.log(formatMessage("Vestibulum facilisis purus nec", 20))                      // возвращает "Vestibulum facilisis..."
+// console.log(formatMessage("Vestibulum facilisis purus nec", 30))                      // возвращает "Vestibulum facilisis purus nec"
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15))                      // возвращает "Nunc sed turpis..."
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41))                      // возвращает "Nunc sed turpis a felis in nunc fringilla"
 
 
-// function isNumberNotInRange(start, end, number) {
-//   const isInRange = number >= start && number <= end;
-//   const isNotInRange = number >= start && number <= end; // Change this line
-  
-//   return !isNotInRange;
-// }
-// isNumberNotInRange(10, 30, 17);
-// isNumberNotInRange(10, 30, 5);
-// isNumberNotInRange(20, 50, 24);
-// isNumberNotInRange(20, 50, 76);
 
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase(); // Change this line
 
-// function getSubstring(string, length) {
-//   const substring = string.slice("Hello world", length); // Change this line
-
-//   return substring;
+//   return normalizedInput;
 // }
 
-// console.log(getSubstring("Hello world", 3)); // возвращает "Hel"
-// console.log(getSubstring("Hello world", 6));   // возвращает "Hello"
-// console.log(getSubstring("Hello world", 8));   // возвращает "Hello wo
-// console.log(getSubstring("Hello world", 11));  //  возвращает "Hello world
-// console.log(getSubstring("Hello world", 0));  //  возвращает ""
 
 
-
-// getSubstring("Hello world", 6)  // возвращает "Hello"
-// getSubstring("Hello world", 8)  // возвращает "Hello wo"
-// getSubstring("Hello world", 11) // возвращает "Hello world"
-// getSubstring("Hello world", 0)  // возвращает ""
-
-
-function formatMessage(message, maxLength) {
-  let result;
-  // Change code below this line
-if (message.length <= maxLength) {
-	result = message.slice(message, maxLength)
-  } else {
-  
-  result = message.slice(0, maxLength)
-  result += '...'
-  }
-  
-  /// Change code above this line
-  return result;
-}
+// function checkForName(fullName, name) {
+//  const result = fullName.includes(name); // Change this line
+//   return result;
+// }
 
 
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this lin
+// 	result = message.toLowerCase().includes('sale') || message.toLowerCase().includes('spam');
+//   // Change code above this line
+//   return result;
+// }
 
-console.log(formatMessage("Curabitur ligula sapien", 16))                      // возвращает "Curabitur ligula..."
-console.log(formatMessage("Curabitur ligula sapien", 23))                      // возвращает "Curabitur ligula sapien"
-console.log(formatMessage("Vestibulum facilisis purus nec", 20))                      // возвращает "Vestibulum facilisis..."
-console.log(formatMessage("Vestibulum facilisis purus nec", 30))                      // возвращает "Vestibulum facilisis purus nec"
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15))                      // возвращает "Nunc sed turpis..."
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41))                      // возвращает "Nunc sed turpis a felis in nunc fringilla"
-
-
-
-function normalizeInput(input) {
-  const normalizedInput = input.toLowerCase(); // Change this line
-
-  return normalizedInput;
-}
-
-
-
-function checkForName(fullName, name) {
- const result = fullName.includes(name); // Change this line
-  return result;
-}
-
-
-function checkForSpam(message) {
-  let result;
-  // Change code below this lin
-	result = message.toLowerCase().includes('sale') || message.toLowerCase().includes('spam');
-  // Change code above this line
-  return result;
-}
