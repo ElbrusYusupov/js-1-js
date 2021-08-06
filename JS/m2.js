@@ -546,3 +546,21 @@
 //   return result;
 // }
 
+// const fnA = function () {
+//     console.log('Начала выполняться [fnA]');
+//     fnB();
+//     console.log('Продолжила выполняться [fnA] после выхода из [fnB]');
+// };
+
+// const fnB = function () {
+//     console.log('Выполняется [fnB]');
+// };
+
+// console.log('Начал выполнение [main]');
+// fnA();
+// console.log('Продолжил выполнятся [main] после выхода из [fnA]');
+
+
+console.log('Этого сообщения не будет в консоли.');
+
+const value = 5;
